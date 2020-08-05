@@ -135,6 +135,7 @@ app.locals.captchaReqId = 1
 app.locals.captchaBypassReqTimes = []
 app.locals.abused_ssti_bug = false
 app.locals.abused_ssrf_bug = false
+app.locals.passwordFailed = 0
 
 /* Compression for all requests */
 app.use(compression())

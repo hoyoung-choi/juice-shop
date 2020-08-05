@@ -825,3 +825,11 @@
   hint: 'You might have to do some OSINT on his social media personas to find out his honest answer to the security question.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#reset-uvogins-password-via-the-forgot-password-mechanism'
   key: resetPasswordUvoginChallenge
+-
+  name: '무제한 패스워드'
+  category: 'Brute Force Attack'
+  description: '잘못된 패스워드로 10번 로그인하세요.'
+  difficulty: 1
+  hint: ''
+  hintUrl: ''
+  key: infinitePasswordChanllenge

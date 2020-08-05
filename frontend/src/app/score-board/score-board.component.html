@@ -132,12 +132,6 @@
       <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>
   </mat-card>
-
-  <div *ngIf="showContributionInfoBox || questionnaireUrl" fxLayout="row" fxLayout.lt-lg="column">
-    <mat-card *ngIf="showContributionInfoBox" fxFlex="40%" fxFlex.lt-lg="100%" class="primary-notification" [innerHTML]="'CALL_FOR_CONTRIBUTIONS' | translate"></mat-card>
-    <span class="fill-remaining-space"></span>
-    <mat-card *ngIf="questionnaireUrl" fxFlex="20%" fxFlex.lt-lg="100%" class="warn-notification" [innerHTML]="'CALL_FOR_FEEDBACK' | translate: {appname: appName, questionnaire: questionnaireUrl}"></mat-card>
-  </div>
 </div>
 
 <img src="assets/public/images/padding/1px.png"/>

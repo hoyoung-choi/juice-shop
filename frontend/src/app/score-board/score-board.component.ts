@@ -46,13 +46,12 @@ export class ScoreBoardComponent implements OnInit {
   public displayedColumns = ['name', 'difficulty', 'description', 'category', 'status']
   public offsetValue = ['100%', '100%', '100%', '100%', '100%', '100%']
   public allowRepeatNotifications: boolean = false
-  public showChallengeHints: boolean = true
-  public showHackingInstructor: boolean = true
+  public showChallengeHints: boolean = false
+  public showHackingInstructor: boolean = false
   public challenges: Challenge[] = []
   public percentChallengesSolved: string = '0'
   public solvedChallengesOfDifficulty: Challenge[][] = [[], [], [], [], [], []]
   public totalChallengesOfDifficulty: Challenge[][] = [[], [], [], [], [], []]
-  public showContributionInfoBox: boolean = true
   public questionnaireUrl: string = 'https://forms.gle/2Tr5m1pqnnesApxN8'
   public appName: string = 'OWASP Juice Shop'
 
@@ -70,7 +69,6 @@ export class ScoreBoardComponent implements OnInit {
       this.allowRepeatNotifications = config.challenges.showSolvedNotifications && config.ctf?.showFlagsInNotifications
       this.showChallengeHints = config.challenges.showHints
       this.showHackingInstructor = config.hackingInstructor && config.hackingInstructor.isEnabled
-      this.showContributionInfoBox = config.application.showGitHubLinks
       this.questionnaireUrl = config.application.social && config.application.social.questionnaireUrl
       this.appName = config.application.name
       this.restrictToTutorialsFirst = config.challenges.restrictToTutorialsFirst
