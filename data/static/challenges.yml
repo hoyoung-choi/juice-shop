@@ -1,5 +1,5 @@
 -
-  name: 'API-only XSS'
+  name: 'API-only XSS-'
   category: 'XSS'
   description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> without using the frontend application at all.'
   difficulty: 3
