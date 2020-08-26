@@ -359,7 +359,7 @@
   category: 'Broken Authentication'
   description: 'Bjoern의 Gmail 계정으로 로그인하세요. (비밀번호 해킹, SQL injection, Google 해킹을 사용하지 말고요) '
   difficulty: 4
-  hint: '이 도전의 보안 결함은 100 % OWASP Juice Shop에 있고 0 %는 Google'입니다. '
+  hint: '이 도전의 보안 결함은 100 % OWASP Juice Shop에 있고 0 %는 Google입니다. '
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#log-in-with-bjoerns-gmail-account'
   key: oauthUserPasswordChallenge
 -
