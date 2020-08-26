@@ -5,5 +5,5 @@ services:
     links:
       - app
   app:
-    image: hoyoungchoi/juice-shop:latest
+    image: hoyoungchoi/juice-shop
     build: ./
