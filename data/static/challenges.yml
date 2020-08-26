@@ -118,12 +118,12 @@
     - Docker
     - Heroku
 -
-  name: 'Confidential Document'
+  name: '컨피덴셜 Document'
   category: 'Sensitive Data Exposure'
-  description: 'Access a confidential document.'
+  description: 'Access a 컨피덴셜 document.'
   difficulty: 1
   hint: 'Analyze and tamper with links in the application that deliver a file directly.'
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#access-a-confidential-document'
+  hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#access-a-컨피덴셜-document'
   key: directoryListingChallenge
 -
   name: 'DOM XSS'
@@ -383,57 +383,57 @@
 -
   name: 'Login MC SafeSearch'
   category: 'Sensitive Data Exposure'
-  description: 'Log in with MC SafeSearch''s original user credentials without applying SQL Injection or any other bypass.'
+  description: 'SQL Injection이나 우회하지 않고 MC SafeSearch 계정으로 로그인하세요.'
   difficulty: 2
-  hint: 'You should listen to MC''s hit song "Protect Ya Passwordz".'
+  hint: '당신은 MC의 히트송 "Protect Ya Passwordz"를 들어야 할 것입니다..'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#log-in-with-mc-safesearchs-original-user-credentials'
   key: loginRapperChallenge
 -
   name: 'Login Support Team'
   category: 'Security Misconfiguration'
-  description: 'Log in with the support team''s original user credentials without applying SQL Injection or any other bypass.'
+  description: 'SQL Injection이나 우회하지 않고 Support team 계정으로 로그인하세요.'
   difficulty: 6
-  hint: 'The underlying flaw of this challenge is a lot more human error than technical weakness.'
+  hint: '이 과제의 근본적인 결함은 기술적 약점보다 훨씬 더 많은 인적 오류입니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/security-misconfiguration.html#log-in-with-the-support-teams-original-user-credentials'
   key: loginSupportChallenge
 -
   name: 'Manipulate Basket'
   category: 'Broken Access Control'
-  description: 'Put an additional product into another user''s shopping basket.'
+  description: '다른 사용자의 장바구니에 상품을 넣으세요.'
   difficulty: 3
-  hint: 'Have an eye on the HTTP traffic while placing products in the shopping basket. Changing the quantity of products already in the basket doesn''t count.'
+  hint: '장바구니에 상품을 담을 때 일어나는 HTTP 통신을 잘 살펴보세요. 장바구니에 들어있는 상품의 수량을 변경하는 것은 의미가 없습니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-access-control.html#put-an-additional-product-into-another-users-shopping-basket'
   key: basketManipulateChallenge
 -
   name: 'Misplaced Signature File'
   category: 'Sensitive Data Exposure'
-  description: 'Access a misplaced <a href="https://github.com/Neo23x0/sigma">SIEM signature</a> file.'
+  description: '잘못 위치한 <a href="https://github.com/Neo23x0/sigma">SIEM 시그니처</a> 파일을 획득하세요.'
   difficulty: 4
-  hint: 'You need to trick a security mechanism into thinking that the file you want has a valid file type.'
+  hint: '보안 매커니즘을 속여 다운로드 가능한 확장자라고 생각하게 만드세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#access-a-misplaced-siem-signature-file'
   key: misplacedSignatureFileChallenge
 -
   name: 'Multiple Likes'
   category: 'Broken Anti Automation'
-  description: 'Like any review at least three times as the same user.'
+  description: '동일 유저로 하나의 리뷰에 3번 이상 좋아요를 누르세요.'
   difficulty: 6
-  hint: 'Punctuality is the politeness of kings.'
+  hint: '시간을 지키는 것은 군수의 예절이다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-anti-automation.html#like-any-review-at-least-three-times-as-the-same-user'
   key: timingAttackChallenge
 -
   name: 'Nested Easter Egg'
   category: 'Cryptographic Issues'
-  description: 'Apply some advanced cryptanalysis to find <i>the real</i> easter egg.'
+  description: '좀 더 심화된 암호화 분석으로 <i>진짜</i> easter egg를 찾으세요!'
   difficulty: 4
-  hint: 'You might have to peel through several layers of tough-as-nails encryption for this challenge.'
+  hint: '이 문제를 해결하기 위해 여러 단계의 강력한 암호화를 거쳐야 할 수도 있습니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/cryptographic-issues.html#apply-some-advanced-cryptanalysis-to-find-the-real-easter-egg'
   key: easterEggLevelTwoChallenge
 -
   name: 'NoSQL DoS'
   category: 'Injection'
-  description: 'Let the server sleep for some time. (It has done more than enough hard work for you)'
+  description: '서버를 잠시동안 재웁시다.'
   difficulty: 4
-  hint: 'This challenge is essentially a stripped-down Denial of Service (DoS) attack.'
+  hint: '이 문제는 서비스 거부(DoS:Denial of Service) 공격입니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#let-the-server-sleep-for-some-time'
   key: noSqlCommandChallenge
   disabledEnv:
@@ -442,9 +442,9 @@
 -
   name: 'NoSQL Exfiltration'
   category: 'Injection'
-  description: 'All your orders are belong to us! Even the ones which don''t.'
+  description: '모든 주문은 우리 것입니다! 우리 것이 아닌 주문일지라도..'
   difficulty: 5
-  hint: 'Take a close look on how the $where query operator works in MongoDB.'
+  hint: 'MongoDB의 WHERE절이 어떻게 동작하는지 확인하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#all-your-orders-are-belong-to-us'
   key: noSqlOrdersChallenge
   disabledEnv:
@@ -453,25 +453,25 @@
 -
   name: 'NoSQL Manipulation'
   category: 'Injection'
-  description: 'Update multiple product reviews at the same time.'
+  description: '여러개 상품의 리뷰를 한꺼번에 업데이트하세요.'
   difficulty: 4
-  hint: 'Take a close look on how the equivalent of UPDATE-statements in MongoDB work.'
+  hint: 'MongoDB의 UPDATE 문법을 살펴보세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#update-multiple-product-reviews-at-the-same-time'
   key: noSqlReviewsChallenge
 -
   name: 'Outdated Whitelist'
   category: 'Unvalidated Redirects'
-  description: 'Let us redirect you to one of our crypto currency addresses which are not promoted any longer.'
+  description: '당신을 우리 비트코인 계좌로 안내 해드릴게요.'
   difficulty: 1
-  hint: 'We might have failed to take this out of our code properly.'
+  hint: '코드에서 제대로 꺼내지 못했을 수도 있습니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/unvalidated-redirects.html#let-us-redirect-you-to-one-of-our-crypto-currency-addresses'
   key: redirectCryptoCurrencyChallenge
 -
   name: 'Password Strength'
   category: 'Broken Authentication'
-  description: 'Log in with the administrator''s user credentials without previously changing them or applying SQL Injection.'
+  description: '변조나 SQL Injection하지 않고 Admin 계정으로 로그인하세요.'
   difficulty: 2
-  hint: 'This one should be equally easy to a) brute force, b) crack the password hash or c) simply guess.'
+  hint: '아래와 같은 방법으로 쉽게 풀 수 있습니다. a) 무제한 대입 b) password hash를 crack c) 그냥 추측한다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#log-in-with-the-administrators-user-credentials-without-previously-changing-them-or-applying-sql-injection'
   key: weakPasswordChallenge
   tutorial:
@@ -479,25 +479,25 @@
 -
   name: 'Payback Time'
   category: 'Improper Input Validation'
-  description: 'Place an order that makes you rich.'
+  description: '당신을 부자로 만들어주는 주문을 실행하세요!'
   difficulty: 3
-  hint: 'You literally need to make the shop owe you any amount of money.'
+  hint: '당신은 말 그대로 당신에게 돈을 빚진 가게를 만들어야합니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#place-an-order-that-makes-you-rich'
   key: negativeOrderChallenge
 -
   name: 'Premium Paywall'
   category: 'Cryptographic Issues'
-  description: '<i class="far fa-gem"></i><i class="far fa-gem"></i><i class="far fa-gem"></i><i class="far fa-gem"></i><i class="far fa-gem"></i><!--IvLuRfBJYlmStf9XfL6ckJFngyd9LfV1JaaN/KRTPQPidTuJ7FR+D/nkWJUF+0xUF07CeCeqYfxq+OJVVa0gNbqgYkUNvn//UbE7e95C+6e+7GtdpqJ8mqm4WcPvUGIUxmGLTTAC2+G9UuFCD1DUjg==--> <a href="https://blockchain.info/address/1AbKfgvw9psQ41NbLi8kufDQTezwG8DRZm" target="_blank"><i class="fab fa-btc fa-sm"></i> Unlock Premium Challenge</a> to access exclusive content.'
+  description: '<i class="far fa-gem"></i><i class="far fa-gem"></i><i class="far fa-gem"></i><i class="far fa-gem"></i><i class="far fa-gem"></i><!--IvLuRfBJYlmStf9XfL6ckJFngyd9LfV1JaaN/KRTPQPidTuJ7FR+D/nkWJUF+0xUF07CeCeqYfxq+OJVVa0gNbqgYkUNvn//UbE7e95C+6e+7GtdpqJ8mqm4WcPvUGIUxmGLTTAC2+G9UuFCD1DUjg==-->특별 페이지 접속을 위해 프리미엄 도전과제를 여세요.'
   difficulty: 6
-  hint: 'You do not have to pay anything to unlock this challenge! Nonetheless, donations are very much appreciated.'
+  hint: '도전 과제를 여는 것은 무료입니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/cryptographic-issues.html#unlock-premium-challenge-to-access-exclusive-content'
   key: premiumPaywallChallenge
 -
   name: 'Privacy Policy'
   category: 'Miscellaneous'
-  description: 'Read our privacy policy.'
+  description: '우리 상점의 개인정보보호 정책을 읽어보세요.'
   difficulty: 1
-  hint: 'We won''t even ask you to confirm that you did. Just read it. Please. Pretty please.'
+  hint: '진짜 읽었는지 확인하지 않습니다. 그냥 한번 읽어보세요..'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/miscellaneous.html#read-our-privacy-policy'
   key: privacyPolicyChallenge
   tutorial:
@@ -505,25 +505,25 @@
 -
   name: 'Privacy Policy Inspection'
   category: 'Security through Obscurity'
-  description: 'Prove that you actually read our privacy policy.'
+  description: '개인정보보호 정책을 정말로 읽었다는 것을 증명하세요.'
   difficulty: 3
-  hint: 'Only by visiting a special URL you can confirm that you read it carefully.'
+  hint: '개인정보보호 정책을 자세히 읽은 사람만 이 URL에 접속할 수 있습니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/security-through-obscurity.html#prove-that-you-actually-read-our-privacy-policy'
   key: privacyPolicyProofChallenge
 -
   name: 'Product Tampering'
   category: 'Broken Access Control'
-  description: 'Change the <code>href</code> of the link within the <a href="/#/search?q=OWASP SSL Advanced Forensic Tool (O-Saft)">OWASP SSL Advanced Forensic Tool (O-Saft)</a> product description into <i>https://owasp.slack.com</i>.'
+  description: '<a href="/#/search?q=OWASP SSL Advanced Forensic Tool (O-Saft)">OWASP SSL Advanced Forensic Tool (O-Saft)</a> 상품 상세 설명의 <code>href</code> 링크를 <i>https://owasp.slack.com</i>로 바꾸세요.'
   difficulty: 3
-  hint: 'Look for one of the following: a) broken admin functionality, b) holes in RESTful API or c) possibility for SQL Injection.'
+  hint: '아래 내용을 살펴보세요. a) admin 권한 체크 미흡 b) REST API 취약점 c) SQL injection 가능성'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-access-control.html#change-the-href-of-the-link-within-the-o-saft-product-description'
   key: changeProductChallenge
 -
   name: 'Reflected XSS'
   category: 'XSS'
-  description: 'Perform a <i>reflected</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
+  description: '<code>&lt;iframe src="javascriptalert(`xss`)"&gt;</code> 를 이용해서 Reflected XSS 공격을 시도하세요.'
   difficulty: 2
-  hint: 'Look for a url parameter where its value appears in the page it is leading to.'
+  hint: 'URL 파라미터에서 연결되는 페이지의 값이 표시되는 곳을 찾으세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/xss.html#perform-a-reflected-xss-attack'
   key: reflectedXssChallenge
   disabledEnv:
@@ -532,65 +532,65 @@
 -
   name: 'Repetitive Registration'
   category: 'Improper Input Validation'
-  description: 'Follow the DRY principle while registering a user.'
+  description: '회원 가입시 우리의 "DRY(Don''t Repeat Yourself) 원칙"을 따라가 봅시다.'
   difficulty: 1
-  hint: 'You can solve this by cleverly interacting with the UI or bypassing it altogether.'
+  hint: 'UI를 교묘하게 조작하거나 완전히 우회하여 문제를 풀 수 있습니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#follow-the-dry-principle-while-registering-a-user'
   key: passwordRepeatChallenge
 -
   name: 'Reset Bender''s Password'
   category: 'Broken Authentication'
-  description: 'Reset Bender''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+  description: '<a href="/#/forgot-password">비밀번호 찾기</a> 메커니즘을 통해 보안 질문에 대한 <i>원래 답변</i>을 입력하여 Bender의 비밀번호를 재설정하세요.'
   difficulty: 4
-  hint: 'Not as trivial as Jim''s but still not too difficult with some "Futurama" background knowledge.'
+  hint: '"퓨처라마"에 대한 배경지식이 있다면 그리 어렵지 않을 것입니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#reset-benders-password-via-the-forgot-password-mechanism'
   key: resetPasswordBenderChallenge
 -
   name: 'Reset Bjoern''s Password'
   category: 'Broken Authentication'
-  description: 'Reset the password of Bjoern''s internal account via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+  description: '<a href="/#/forgot-password">비밀번호 찾기</a> 메커니즘을 통해 보안 질문에 대한 <i>원래 답변</i>을 입력하여 Bjoern의 비밀번호를 재설정하세요.'
   difficulty: 5
-  hint: 'Nothing a little bit of Facebook stalking couldn''t reveal. Might involve a historical twist.'
+  hint: 'Facebook 스토킹으로 모든 것을 알아낼 수 없습니다. 약간의 역사적 지식을 첨가하세요!'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#reset-the-password-of-bjoerns-internal-account-via-the-forgot-password-mechanism'
   key: resetPasswordBjoernChallenge
 -
-  name: 'Reset Jim''s Password'
+  name: 'Reset Jim''s Password' 
   category: 'Broken Authentication'
-  description: 'Reset Jim''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+  description: '<a href="/#/forgot-password">비밀번호 찾기</a> 메커니즘을 통해 보안 질문에 대한 <i>원래 답변</i>을 입력하여 Jim의 비밀번호를 재설정하세요.'
   difficulty: 3
-  hint: 'It''s hard for celebrities to pick a security question from a hard-coded list where the answer is not publicly exposed.'
+  hint: 'It''s hard for celebrities to pick a security question from a hard-coded list where the answer is not publicly exposed.' #무슨말인지...
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#reset-jims-password-via-the-forgot-password-mechanism'
   key: resetPasswordJimChallenge
 -
   name: 'Reset Morty''s Password'
   category: 'Broken Anti Automation'
-  description: 'Reset Morty''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>his obfuscated answer</i> to his security question.'
+  description: '<a href="/#/forgot-password">비밀번호 찾기</a> 메커니즘을 통해 보안 질문에 대한 <i>난독화 된 답변</i>을 사용하여 Morty의 비밀번호를 재설정하세요.'
   difficulty: 5
-  hint: 'Find a way to bypass the rate limiting and brute force the obfuscated answer to Morty''s security question.'
+  hint: '속도 제한과 무차별 대입 제한을 우회하는 방법을 찾으세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-anti-automation.html#reset-mortys-password-via-the-forgot-password-mechanism'
   key: resetPasswordMortyChallenge
 -
   name: 'Retrieve Blueprint'
   category: 'Sensitive Data Exposure'
-  description: 'Deprive the shop of earnings by downloading the blueprint for one of its products.'
+  description: '제품 중 하나의 설계도를 획득해서 상점의 수입을 빼앗으세요.'
   difficulty: 5
-  hint: 'The product you might want to give a closer look is the OWASP Juice Shop Logo (3D-printed).'
+  hint: '제품은 우리 OWASP Juice Shop 로고와 비슷하게 생겼습니다(3D-printed).'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#deprive-the-shop-of-earnings-by-downloading-the-blueprint-for-one-of-its-products'
   key: retrieveBlueprintChallenge
 -
   name: 'SSRF'
   category: 'Broken Access Control'
-  description: 'Request a hidden resource on server through server.'
+  description: '서버를 통해 서버의 숨겨진 자원을 획득하세요.'
   difficulty: 6
-  hint: 'Reverse engineering something bad can make good things happen.'
+  hint: '나쁜 일을 리버스 엔지니어링하면 좋은 일이 일어날 수 있습니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-access-control.html#request-a-hidden-resource-on-server-through-server'
   key: ssrfChallenge
 -
   name: 'SSTi'
   category: 'Injection'
-  description: 'Infect the server with juicy malware by abusing arbitrary command execution.'
+  description: '명령어 실행을 통해 서버에 Juicy 악성코드(Juicy malware)를 감염시키세요.'
   difficulty: 6
-  hint: '"SSTi" is a clear indicator that this has nothing to do with anything Angular. Also, make sure to use only our non-malicious malware.'
+  hint: '"SSTi(Server-side Template injection)"은 Angular로는 할 수 없다는 것을 알고 계시겠죠. 또한, 우리가 만든 "악성이 아닌" 악성코드를 사용하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#infect-the-server-with-juicy-malware-by-abusing-arbitrary-command-execution'
   key: sstiChallenge
   disabledEnv:
@@ -599,9 +599,9 @@
 -
   name: 'Score Board'
   category: 'Miscellaneous'
-  description: 'Find the carefully hidden ''Score Board'' page.'
+  description: '''Score Board'' 페이지를 찾으세요.'
   difficulty: 1
-  hint: 'Try to find a reference or clue behind the scenes. Or simply guess what URL the Score Board might have.'
+  hint: '상점 곳곳에서 힌트를 얻으세요. 또는 URL을 유추해보는 것도 좋습니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/score-board.html#find-the-carefully-hidden-score-board-page'
   key: scoreBoardChallenge
   tutorial:
@@ -609,17 +609,17 @@
 -
   name: 'Security Policy'
   category: 'Miscellaneous'
-  description: 'Behave like any "white-hat" should before getting into the action.'
+  description: '화이트 해커인 척 해보세요.'
   difficulty: 2
-  hint: 'Undoubtably you want to read our security policy before conducting any research on our application.'
+  hint: '우리 어플리케이션 연구를 수행하기 전에 당연히 우리 상점의 보안 정책이 궁금하시겠죠?'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/miscellaneous.html#behave-like-any-white-hat-should-before-getting-into-the-action'
   key: securityPolicyChallenge
 -
   name: 'Server-side XSS Protection'
   category: 'XSS'
-  description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> bypassing a <i>server-side</i> security mechanism.'
+  description: '<code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>를 이용해서 <i>server-side</i> 보안 로직을 우회하는 XSS 공격을 시도하세요.'
   difficulty: 4
-  hint: 'The "Comment" field in the "Customer Feedback" screen is where you want to put your focus on.'
+  hint: '"Customer Feedback"메뉴의 "Comment" 가 당신이 집중해야하는 포인트입니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/xss.html#perform-a-persisted-xss-attack-bypassing-a-server-side-security-mechanism'
   key: persistedXssFeedbackChallenge
   disabledEnv:
@@ -628,17 +628,17 @@
 -
   name: 'Steganography'
   category: 'Security through Obscurity'
-  description: '<a href="/#/contact">Rat out</a> a notorious character hiding in plain sight in the shop. (Mention the exact name of the character)'
+  description: '우리 상점에서 눈에 잘 띄는 곳에 숨어있는 악명 높은 캐릭터를 찾아 <a href="/#/contact">알려주세요.</a> (캐릭터의 정확한 이름을 알려주세요.)'
   difficulty: 4
-  hint: 'No matter how good your eyes are, you will need tool assistance for this challenge.'
+  hint: '당신의 눈이 얼마나 좋은지 모르겠지만, 이 문제는 툴의 도움 없이는 풀 수 없습니다..'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/security-through-obscurity.html#rat-out-a-notorious-character-hiding-in-plain-sight-in-the-shop'
   key: hiddenImageChallenge
 -
   name: 'Successful RCE DoS'
   category: 'Insecure Deserialization'
-  description: 'Perform a Remote Code Execution that occupies the server for a while without using infinite loops.'
+  description: '무한 루프를 사용하지 않고 잠시동안 서버를 차지하는 원격 코드를 실행하세요.'
   difficulty: 6
-  hint: 'Your attack payload must not trigger the protection against too many iterations.'
+  hint: '공격 페이로드는 너무 많은 반복에 대한 방어 로직을 트리거하지 않아야 합니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/insecure-deserialization.html#perform-a-remote-code-execution-that-occupies-the-server-for-a-while-without-using-infinite-loops'
   key: rceOccupyChallenge
   disabledEnv:
@@ -647,57 +647,57 @@
 -
   name: 'Supply Chain Attack'
   category: 'Vulnerable Components'
-  description: '<a href="/#/contact">Inform the development team</a> about a danger to some of <em>their</em> credentials. (Send them the URL of the <em>original report</em> or an assigned CVE or another identifier of this vulnerability)'
+  description: '<a href="/#/contact">우리 상점의 개발 팀</a>에게 <em>그들</em>이 신뢰하는 것중 위험한 것에 대해 알려주세요. (<em>위험 리포트</em>의 URL이나 CVE 코드, 취약점에 대해 알수 있는 다른 URL을 보내세요.)'
   difficulty: 5
-  hint: 'This vulnerability will not affect any customer of the shop. It is aimed exclusively at its developers.'
+  hint: '이 취약점의 목표는 우리 상점의 사용자가 아닙니다. 오직 개발자만을 목표로 합니다..'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/vulnerable-components.html#inform-the-development-team-about-a-danger-to-some-of-their-credentials'
   key: supplyChainAttackChallenge
 -
   name: 'Two Factor Authentication'
   category: 'Broken Authentication'
-  description: 'Solve the 2FA challenge for user "wurstbrot". (Disabling, bypassing or overwriting his 2FA settings does not count as a solution)'
+  description: '사용자 "wurstbrot"의 2FA을 통과하세요.(2FA설정을 비활성화, 우회 또는 덮어쓰는 것은 정답이 아닙니다.)'
   difficulty: 5
-  hint: 'The 2FA implementation requires to store a secret for every user. You will need to find a way to access this secret in order to solve this challenge.'
+  hint: '2FA인증을 위해서는 모든 사용자의 비밀 키를 저장해야합니다. 문제를 풀기 위해서는 비밀 키를 알아내야 합니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#solve-the-2fa-challenge-for-user-wurstbrot'
   key: twoFactorAuthUnsafeSecretStorageChallenge
 -
   name: 'Unsigned JWT'
   category: 'Vulnerable Components'
-  description: 'Forge an essentially unsigned JWT token that impersonates the (non-existing) user <i>jwtn3d@juice-sh.op</i>.'
+  description: '서명되지 않은 JWT 토큰을 이용해서 (존재하지 않는)사용자 <i>jwtn3d@juice-sh.op</i>의 JWT 토큰을 만드세요.'
   difficulty: 5
-  hint: 'This challenge exploits a weird option that is supported when signing tokens with JWT.'
+  hint: 'JWT로 토큰에 서명 할 때 지원되는 이상한 옵션을 이용하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/vulnerable-components.html#forge-an-essentially-unsigned-jwt-token'
   key: jwtUnsignedChallenge
 -
   name: 'Upload Size'
   category: 'Improper Input Validation'
-  description: 'Upload a file larger than 100 kB.'
+  description: '100KB보다 큰 파일을 업로드하세요.'
   difficulty: 3
-  hint: 'You can attach a small file to the "Complaint" form. Investigate how this upload actually works.'
+  hint: '"Complaint" 메뉴에서는 작은 크기의 파일을 업로드할 수 있습니다. 업로드가 어떻게 일어나는지 확인하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#upload-a-file-larger-than-100-kb'
   key: uploadSizeChallenge
 -
   name: 'Upload Type'
   category: 'Improper Input Validation'
-  description: 'Upload a file that has no .pdf or .zip extension.'
+  description: '.pdf나 .zip 확장자가 아닌 파일을 업로드하세요.'
   difficulty: 3
-  hint: 'You can attach a PDF or ZIP file to the "Complaint" form. Investigate how this upload actually works.'
+  hint: '"Complaint" 메뉴에서는 PDF나 ZIP파일을 업로드할 수 있습니다. 업로드가 어떻게 일어나는지 확인하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#upload-a-file-that-has-no-pdf-or-zip-extension'
   key: uploadTypeChallenge
 -
   name: 'User Credentials'
   category: 'Injection'
-  description: 'Retrieve a list of all user credentials via SQL Injection.'
+  description: 'SQL Injection으로 우리 상점의 모든 사용자 목록을 획득하세요.'
   difficulty: 4
-  hint: 'Gather information on where user data is stored and how it is addressed. Then craft a corresponding UNION SELECT attack.'
+  hint: '사용자 데이터가 저장되는 위치와 처리 방법에 대해 알아보세요. 그 후 UNION SELECT 공격을 시도하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#retrieve-a-list-of-all-user-credentials-via-sql-injection'
   key: unionSqlInjectionChallenge
 -
   name: 'Video XSS'
   category: 'XSS'
-  description: 'Embed an XSS payload <code>&lt;/script&gt;&lt;script&gt;alert(`xss`)&lt;/script&gt;</code> into our promo video.'
+  description: '<code>&lt;/script&gt;&lt;script&gt;alert(`xss`)&lt;/script&gt;</code>를 이용해서 Promotion 비디오에 스크립트를 심으세요.'
   difficulty: 6
-  hint: 'You have to reuse the vulnerability behind one other 6-star challenge to be able to solve this one.'
+  hint: '다른 6레벨 문제에서 사용한 취약점을 응용하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/xss.html#embed-an-xss-payload-into-our-promo-video'
   key: videoXssChallenge
   disabledEnv:
@@ -706,9 +706,9 @@
 -
   name: 'View Basket'
   category: 'Broken Access Control'
-  description: 'View another user''s shopping basket.'
+  description: '다른 사람의 장바구니를 훔쳐보세요.'
   difficulty: 2
-  hint: 'Have an eye on the HTTP traffic while shopping. Alternatively try to find a client-side association of users to their basket.'
+  hint: '쇼핑할 때 벌어지는 HTTP traffic에 주목하세요. 또는, 고객과 장바구니가 어떻게 연결되는지 찾아보세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-access-control.html#view-another-users-shopping-basket'
   key: basketAccessChallenge
   tutorial:
@@ -716,40 +716,40 @@
 -
   name: 'Vulnerable Library'
   category: 'Vulnerable Components'
-  description: '<a href="/#/contact">Inform the shop</a> about a vulnerable library it is using. (Mention the exact library name and version in your comment)'
+  description: '우리 상점에서 사용하는 라이브러리 중 취약한 라이브러리가 있다면 <a href="/#/contact">우리 상점에게 알려주세요.</a> (라이브러리의 정확한 이름과 버전을 알려주시기 바랍니다.)'
   difficulty: 4
-  hint: 'Report one of two possible answers via the "Customer Feedback" form. Do not forget to submit the library''s version as well.'
+  hint: '"Customer Feedback"의 comment를 통해 가능한 2가지 답변 중 하나를 입력하세요. 라이브러리 버전도 함께 입력하는 것을 잊지마세요!'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/vulnerable-components.html#inform-the-shop-about-a-vulnerable-library-it-is-using'
   key: knownVulnerableComponentChallenge
 -
   name: 'Weird Crypto'
   category: 'Cryptographic Issues'
-  description: '<a href="/#/contact">Inform the shop</a> about an algorithm or library it should definitely not use the way it does.'
+  description: '잘못 사용하고 있는 알고리즘이나 라이브러리를 찾아 <a href="/#/contact">우리 상점에게 알려주세요.</a>'
   difficulty: 2
-  hint: 'Report one of four possible answers via the "Customer Feedback" form.'
+  hint: '"Customer Feedback"의 comment를 통해 가능한 5가지 답변 중 하나를 입력하세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/cryptographic-issues.html#inform-the-shop-about-an-algorithm-or-library-it-should-definitely-not-use-the-way-it-does'
   key: weirdCryptoChallenge
 -
   name: 'Whitelist Bypass'
   category: 'Unvalidated Redirects'
-  description: 'Enforce a redirect to a page you are not supposed to redirect to.'
+  description: 'Redirect가 허용되지 않은 곳으로 redirect 하세요.'
   difficulty: 4
-  hint: 'You have to find a way to beat the whitelist of allowed redirect URLs.'
+  hint: 'Redirect whitelist URL 확인을 우회할 수 있는 방법을 찾아보세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/unvalidated-redirects.html#enforce-a-redirect-to-a-page-you-are-not-supposed-to-redirect-to'
   key: redirectChallenge
 -
   name: 'XXE Data Access'
   category: 'XXE'
-  description: 'Retrieve the content of <code>C:\Windows\system.ini</code> or <code>/etc/passwd</code> from the server.'
+  description: '서버에서 <code>C:\Windows\system.ini</code> 또는 <code>/etc/passwd</code> 파일을 획득하세요.'
   difficulty: 3
-  hint: 'The leverage point for this challenge is the deprecated B2B interface.'
+  hint: '이 문제의 활용 포인트는 더이상 활용하지 않는 B2B 인터페이스 입니다.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/xxe.html#retrieve-the-content-of-cwindowssystemini-or-etcpasswd-from-the-server'
   key: xxeFileDisclosureChallenge
   disabledEnv:
   - Docker
   - Heroku
 -
-  name: 'XXE DoS'
+  name: 'XXE DoS'  # 모르겠음
   category: 'XXE'
   description: 'Give the server something to chew on for quite a while.'
   difficulty: 5
@@ -762,21 +762,21 @@
 -
   name: 'Zero Stars'
   category: 'Improper Input Validation'
-  description: 'Give a devastating zero-star feedback to the store.'
+  description: '우리 상점에 별점 0점의 피드백을 주세요.'
   difficulty: 1
-  hint: 'Before you invest time bypassing the API, you might want to play around with the UI a bit.'
+  hint: 'API 우회 시도 전, UI를 사용해보세요!'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#give-a-devastating-zero-star-feedback-to-the-store'
   key: zeroStarsChallenge
 -
   name: 'Missing Encoding'
   category: 'Improper Input Validation'
-  description: 'Retrieve the photo of Bjoern''s cat in "melee combat-mode".'
+  description: 'Bjoern의 귀여운 고양이 사진을 찾아보세요.'
   difficulty: 1
-  hint: 'Check the Photo Wall for an image that could not be loaded correctly.'
+  hint: 'Photo Wall 페이지에서 정상적으로 로드되지 못한 이미지를 찾아보세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#retrieve-the-photo-of-bjoerns-cat-in-melee-combat-mode'
   key: missingEncodingChallenge
 -
-  name: 'Cross-Site Imaging'
+  name: 'Cross-Site Imaging' # 모르겠음
   category: 'Security Misconfiguration'
   description: 'Stick <a href="http://placekitten.com/" target="_blank">cute cross-domain kittens</a> all over our delivery boxes.'
   difficulty: 5
@@ -786,33 +786,33 @@
 -
   name: 'Exposed Metrics'
   category: 'Sensitive Data Exposure'
-  description: 'Find the endpoint that serves usage data to be scraped by a <a href="https://github.com/prometheus/prometheus">popular monitoring system</a>.'
+  description: '<a href="https://github.com/prometheus/prometheus">인기있는 모니터링 시스템</a>에서 스크랩하는 유용한 data를 제공하는 Endpoint를 찾으세요.'
   difficulty: 1
-  hint: 'Try to guess what URL the endpoint might have.'
+  hint: 'Endpoint가 어떤 URL을 사용할지 추측해보세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#find-the-endpoint-that-serves-usage-data-to-be-scraped-by-a-popular-monitoring-system'
   key: exposedMetricsChallenge
 -
   name: 'Deluxe Fraud'
   category: 'Improper Input Validation'
-  description: 'Obtain a Deluxe Membership without paying for it.'
+  description: '공짜로 Deluxe Membership 멤버쉽을 획득하세요!'
   difficulty: 3
-  hint: 'Look closely at what happens when you attempt to upgrade your account.'
+  hint: '계정을 업그레이드할 때 무슨 일이 벌어지는지 자세히 보세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#obtain-a-deluxe-membership-without-paying-for-it'
   key: freeDeluxeChallenge
 -
   name: 'CSRF' # FIXME No e2e test automation! No longer works in Chrome >=80 or other latest browsers!
   category: 'Broken Access Control'
-  description: 'Change the name of a user by performing Cross-Site Request Forgery from <a href="http://htmledit.squarefree.com">another origin</a>.'
+  description: 'CSRF 공격으로 회원의 이름을 바꾸세요. (<a href="http://htmledit.squarefree.com">HTML 테스트 사이트</a>).'
   difficulty: 3
-  hint: 'Find a form which updates the username and then construct a malicious page in the online HTML editor.'
+  hint: 'username을 업데이트하는 form을 찾아 온라인 HTML editor로 악성 페이지를 만드세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-access-control.html#change-the-name-of-a-user-by-performing-cross-site-request-forgery-from-another-origin'
   key: csrfChallenge
 -
   name: 'Bonus Payload'
   category: 'XSS'
-  description: 'Use the bonus payload <code>&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&quot;&gt;&lt;/iframe&gt;</code> in the <i>DOM XSS</i> challenge.'
+  description: '보너스 코드 <code>&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&quot;&gt;&lt;/iframe&gt;</code>를 사용해서 <i>DOM XSS</i> 공격을 시도하세요'
   difficulty: 1
-  hint: 'Copy + Paste = Solved!'
+  hint: 'Copy + Paste = 성공!'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/xss.html#use-the-bonus-payload-in-the-dom-xss-challenge'
   key: xssBonusChallenge
   tutorial:
@@ -820,9 +820,9 @@
 -
   name: 'Reset Uvogin''s Password'
   category: 'Sensitive Data Exposure'
-  description: 'Reset Uvogin''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+  description: '<a href="/#/forgot-password">Forgot Password</a> 페이지에서 Uvogin의 Security Question을 풀어 비밀번호를 리셋하세요.'
   difficulty: 4
-  hint: 'You might have to do some OSINT on his social media personas to find out his honest answer to the security question.'
+  hint: 'Security Question에 대한 해답을 얻기 위해서 Uvogin의 SNS에서 OSINT(Open Source Intelligence, 공개된 정보)를 찾아보세요.'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#reset-uvogins-password-via-the-forgot-password-mechanism'
   key: resetPasswordUvoginChallenge
 -
