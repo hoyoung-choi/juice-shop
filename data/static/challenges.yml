@@ -118,12 +118,12 @@
     - Docker
     - Heroku
 -
-  name: '컨피덴샬 Document'
+  name: 'Confidential Document'
   category: 'Sensitive Data Exposure'
-  description: '컨피덴샬 document 에 접근하세요'
+  description: 'Confidential document 에 접근하세요'
   difficulty: 1
   hint: '파일을 직접 전달하는 애플리케이션의 링크를 분석하고 변조해보세요!'
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#access-a-'컨피덴샬-document'
+  hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#access-a-confidential-document'
   key: directoryListingChallenge
 -
   name: 'DOM XSS'
