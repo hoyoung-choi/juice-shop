@@ -8,7 +8,7 @@ RUN rm -rf frontend/node_modules
 FROM node:12-alpine
 ARG BUILD_DATE
 ARG VCS_REF
-LABEL maintainer="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
+LABEL maintainer="DC Juice Shop <chlghdud7979@naver.com>" \
     org.opencontainers.image.title="OWASP Juice Shop" \
     org.opencontainers.image.description="Probably the most modern and sophisticated insecure web application" \
     org.opencontainers.image.authors="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
@@ -17,7 +17,7 @@ LABEL maintainer="Bjoern Kimminich <bjoern.kimminich@owasp.org>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.version="11.1.3" \
     org.opencontainers.image.url="https://owasp-juice.shop" \
-    org.opencontainers.image.source="https://github.com/bkimminich/juice-shop" \
+    org.opencontainers.image.source="https://github.com/hoyoung-choi/juice-shop" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 WORKDIR /juice-shop
