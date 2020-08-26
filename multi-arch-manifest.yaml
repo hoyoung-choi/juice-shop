@@ -1,6 +1,6 @@
-image: bkimminich/juice-shop:latest
+image: hoyoungchoi/juice-shop:latest
 manifests:
-  - image: bkimminich/juice-shop:latest-amd64
+  - image: hoyoungchoi/juice-shop:latest
     platform:
       architecture: amd64
       os: linux
