@@ -17,7 +17,9 @@
 <button *ngIf="!challenge.disabledEnv && !challenge.solved"
         [id]="challenge.name + '.notSolved'"
         mat-raised-button color="primary"
+        (click)="openHint()"
         [matTooltip]="showChallengeHints ? challenge.hint : null"
+        matTooltipClass="hint-tooltip"
         matTooltipPosition="above">
             <mat-icon [hidden]="!showChallengeHints || !challenge.hintUrl">book</mat-icon>
             <mat-icon [hidden]="showChallengeHints && challenge.hintUrl">check_box_outline_blank</mat-icon>

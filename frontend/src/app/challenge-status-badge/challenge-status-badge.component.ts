@@ -23,7 +23,7 @@ export class ChallengeStatusBadgeComponent {
 
   @Input() public challenge: Challenge = { } as Challenge
   @Input() public allowRepeatNotifications: boolean = false
-  @Input() public showChallengeHints: boolean = false
+  @Input() public showChallengeHints: boolean = true
 
   constructor (private challengeService: ChallengeService, private windowRefService: WindowRefService) { }
 
