@@ -10,7 +10,7 @@
     - Docker
     - Heroku
 -
-  name: 'Access Log'
+  name: '[필수] Access Log'
   category: 'Sensitive Data Exposure'
   description: '서버의 Access log에 접근하세요.'
   difficulty: 4
@@ -18,7 +18,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#gain-access-to-any-access-log-file-of-the-server'
   key: accessLogDisclosureChallenge
 -
-  name: 'Admin Registration'
+  name: '[필수] Admin Registration'
   category: 'Improper Input Validation'
   description: '계정을 생성하여 Admin 권한을 부여해주세요.'
   difficulty: 3
@@ -53,14 +53,6 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#reset-the-password-of-bjoerns-owasp-account-via-the-forgot-password-mechanism'
   key: resetPasswordBjoernOwaspChallenge
 -
-  name: 'Blockchain Hype'
-  category: 'Security through Obscurity'
-  description: '공식발표 전에 Token Sale 이 무엇인지 습득하세요.'
-  difficulty: 5
-  hint: '"Security through Obscurity" 이 실제 액세스 제한보다 효과적일 수 있습니다.'
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/security-through-obscurity.html#learn-about-the-token-sale-before-its-official-announcement'
-  key: tokenSaleChallenge
--
   name: 'Blocked RCE DoS'
   category: 'Insecure Deserialization'
   description: '강화되지 않은 애플리케이션이 <em>영원히</em> 과부하로 실행되도록 원격 코드를 실행합니다.'
@@ -72,7 +64,7 @@
     - Docker
     - Heroku
 -
-  name: 'CAPTCHA Bypass'
+  name: '[필수] CAPTCHA Bypass'
   category: 'Broken Anti Automation'
   description: '10 초 이내에 10 개 이상의 고객 피드백을 제출하세요.'
   difficulty: 3
@@ -88,7 +80,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#change-benders-password-into-slurmcl4ssic-without-using-sql-injection-or-forgot-password'
   key: changePasswordBenderChallenge
 -
-  name: 'Christmas Special'
+  name: '[필수] Christmas Special'
   category: 'Injection'
   description: '2014년 크리스마스 스페셜 상품을 주문하세요.'
   difficulty: 4
@@ -118,7 +110,7 @@
     - Docker
     - Heroku
 -
-  name: 'Confidential Document'
+  name: '[필수] Confidential Document'
   category: 'Sensitive Data Exposure'
   description: 'Confidential document 에 접근하세요'
   difficulty: 1
@@ -126,7 +118,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#access-a-confidential-document'
   key: directoryListingChallenge
 -
-  name: 'DOM XSS'
+  name: '[필수] DOM XSS'
   category: 'XSS'
   description: '<code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>으로 <i>DOM</i> XSS 공격을 실행하세요.'
   difficulty: 1
@@ -136,7 +128,7 @@
   tutorial:
     order: 2
 -
-  name: 'Database Schema'
+  name: '[필수] Database Schema'
   category: 'Injection'
   description: 'SQL 주입을 통해 전체 DB스키마 정의를 추출합니다.'
   difficulty: 3
@@ -144,7 +136,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#exfiltrate-the-entire-db-schema-definition-via-sql-injection'
   key: dbSchemaChallenge
 -
-  name: 'Deprecated Interface'
+  name: '[필수] Deprecated Interface'
   category: 'Security Misconfiguration'
   description: '더 이상 사용되지 않는 B2B 인터페이스를 활용해보세요!'
   difficulty: 2
@@ -160,14 +152,6 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-access-control.html#find-the-hidden-easter-egg'
   key: easterEggLevelOneChallenge
 -
-  name: 'Email Leak'
-  category: 'Sensitive Data Exposure'
-  description: '도메인 간 데이터에 액세스하여 원치 않는 정보 공개를 수행합니다.'
-  difficulty: 5
-  hint: '사용자 정보로 응답하는 엔드 포인트를 찾아 공격하십시오. 여기서 SQL injection은 해결책이 아닙니다. '
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#perform-an-unwanted-information-disclosure-by-accessing-data-cross-domain'
-  key: emailLeakChallenge
--
   name: 'Ephemeral Accountant'
   category: 'Injection'
   description: '회원가입되지 않은 계정으로 로그인 해보세요. <i>acc0unt4nt@juice-sh.op</i> '
@@ -176,7 +160,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#log-in-with-the-non-existing-accountant-without-ever-registering-that-user'
   key: ephemeralAccountantChallenge
 -
-  name: 'Error Handling'
+  name: '[필수] Error Handling'
   category: 'Security Misconfiguration'
   description: '오류를 유발해보세요.'
   difficulty: 1
@@ -200,7 +184,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-anti-automation.html#retrieve-the-language-file-that-never-made-it-into-production'
   key: extraLanguageChallenge
 -
-  name: 'Five-Star Feedback'
+  name: '[필수] Five-Star Feedback'
   category: 'Broken Access Control'
   description: '모든 별 5개짜리 고객 피드백을 제거하십시오.'
   difficulty: 2
@@ -216,7 +200,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/cryptographic-issues.html#forge-a-coupon-code-that-gives-you-a-discount-of-at-least-80'
   key: forgedCouponChallenge
 -
-  name: 'Forged Feedback'
+  name: '[필수] Forged Feedback'
   category: 'Broken Access Control'
   description: '다른 사용자 이름으로 피드백을 게시하세요.'
   difficulty: 3
@@ -226,7 +210,7 @@
   tutorial:
     order: 8
 -
-  name: 'Forged Review'
+  name: '[필수] Forged Review'
   category: 'Broken Access Control'
   description: '제품 리뷰를 다른 사용자로 게시하거나 사용자의 기존 리뷰를 편집하십시오.'
   difficulty: 3
@@ -303,14 +287,6 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/cryptographic-issues.html#solve-challenge-999'
   key: continueCodeChallenge
 -
-  name: 'Leaked Access Logs'
-  category: 'Sensitive Data Exposure'
-  description: '유출된 비밀번호를 활용하여 해당 비밀번호가 속한 원래 사용자 계정으로 로그인합니다. (동일한 비밀번호로 새 계정을 만드는 것은 해결책이 아닙니다.) '
-  difficulty: 5
-  hint: '"Password Spraying" 을 활용해보세요!'
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#dumpster-dive-the-internet-for-a-leaked-password-and-log-in-to-the-original-user-account-it-belongs-to'
-  key: dlpPasswordSprayingChallenge
--
   name: 'Leaked Unsafe Product'
   category: 'Sensitive Data Exposure'
   description: '상점에서 제거된 안전하지 않은 제품을 식별하고 위험한 성분을 <a href="/#/contact">상점에 알립니다</a>.'
@@ -318,14 +294,6 @@
   hint: '당신 자신의 SQLi와 다른 사람의 Ctrl-V가 이 도전의 성공포인트 입니다!'
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#identify-an-unsafe-product-that-was-removed-from-the-shop-and-inform-the-shop-which-ingredients-are-dangerous'
   key: dlpPastebinDataLeakChallenge
--
-  name: 'Legacy Typosquatting'
-  category: 'Vulnerable Components'
-  description: 'v6.2.0-SNAPSHOT에서 희생 된 typosquatting 트릭에 대해 <a href="/#/contact">상점에 알립니다</a>. (범인의 정확한 이름 언급)'
-  difficulty: 4
-  hint: '이 도전은 잘못된 웹 도메인과 관련이 없습니다. 대신 개발자의 잊혀진 백업 파일을 조사하십시오. '
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/vulnerable-components.html#inform-the-shop-about-a-typosquatting-trick-it-has-been-a-victim-of'
-  key: typosquattingNpmChallenge
 -
   name: 'Login Admin'
   category: 'Injection'
@@ -355,22 +323,6 @@
   tutorial:
     order: 10
 -
-  name: 'Login Bjoern'
-  category: 'Broken Authentication'
-  description: 'Bjoern의 Gmail 계정으로 로그인하세요. (비밀번호 해킹, SQL injection, Google 해킹을 사용하지 말고요) '
-  difficulty: 4
-  hint: '이 도전의 보안 결함은 100 % OWASP Juice Shop에 있고 0 %는 Google입니다. '
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#log-in-with-bjoerns-gmail-account'
-  key: oauthUserPasswordChallenge
--
-  name: 'Login CISO'
-  category: 'Broken Authentication'
-  description: 'OAuth 2.0을 이용하여 최고 정보 보안 책임자의 사용자 계정으로 로그인하십시오.'
-  difficulty: 5
-  hint: 'Google의 OAuth 2.0 서비스를이기려고하지 마십시오. 오히려 OWASP Juice Shop의 끝단에서 구현 결함을 조사하십시오. '
-  hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#exploit-oauth-20-to-log-in-with-the-cisos-user-account'
-  key: loginCisoChallenge
--
   name: 'Login Jim'
   category: 'Injection'
   description: 'Jim의 사용자 계정으로 로그인하십시오.'
@@ -397,7 +349,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/security-misconfiguration.html#log-in-with-the-support-teams-original-user-credentials'
   key: loginSupportChallenge
 -
-  name: 'Manipulate Basket'
+  name: '[필수] Manipulate Basket'
   category: 'Broken Access Control'
   description: '다른 사용자의 장바구니에 상품을 넣으세요.'
   difficulty: 3
@@ -477,7 +429,7 @@
   tutorial:
     order: 6
 -
-  name: 'Payback Time'
+  name: '[필수] Payback Time'
   category: 'Improper Input Validation'
   description: '당신을 부자로 만들어주는 주문을 실행하세요!'
   difficulty: 3
@@ -530,7 +482,7 @@
     - Docker
     - Heroku
 -
-  name: 'Repetitive Registration'
+  name: '[필수] Repetitive Registration'
   category: 'Improper Input Validation'
   description: '회원 가입시 우리의 "DRY(Don''t Repeat Yourself) 원칙"을 따라가 봅시다.'
   difficulty: 1
@@ -597,7 +549,7 @@
     - Docker
     - Heroku
 -
-  name: 'Score Board'
+  name: '[필수] Score Board'
   category: 'Miscellaneous'
   description: '''Score Board'' 페이지를 찾으세요.'
   difficulty: 1
@@ -669,7 +621,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/vulnerable-components.html#forge-an-essentially-unsigned-jwt-token'
   key: jwtUnsignedChallenge
 -
-  name: 'Upload Size'
+  name: '[필수] Upload Size'
   category: 'Improper Input Validation'
   description: '100KB보다 큰 파일을 업로드하세요.'
   difficulty: 3
@@ -677,7 +629,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#upload-a-file-larger-than-100-kb'
   key: uploadSizeChallenge
 -
-  name: 'Upload Type'
+  name: '[필수] Upload Type'
   category: 'Improper Input Validation'
   description: '.pdf나 .zip 확장자가 아닌 파일을 업로드하세요.'
   difficulty: 3
@@ -685,7 +637,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/improper-input-validation.html#upload-a-file-that-has-no-pdf-or-zip-extension'
   key: uploadTypeChallenge
 -
-  name: 'User Credentials'
+  name: '[필수] User Credentials'
   category: 'Injection'
   description: 'SQL Injection으로 우리 상점의 모든 사용자 목록을 획득하세요.'
   difficulty: 4
@@ -760,7 +712,7 @@
   - Docker
   - Heroku
 -
-  name: 'Zero Stars'
+  name: '[필수] Zero Stars'
   category: 'Improper Input Validation'
   description: '우리 상점에 별점 0점의 피드백을 주세요.'
   difficulty: 1
@@ -826,7 +778,7 @@
   hintUrl: 'https://pwning.owasp-juice.shop/part2/sensitive-data-exposure.html#reset-uvogins-password-via-the-forgot-password-mechanism'
   key: resetPasswordUvoginChallenge
 -
-  name: '무제한 패스워드'
+  name: '[필수] 무제한 패스워드'
   category: 'Brute Force Attack'
   description: '잘못된 패스워드로 10번 로그인하세요.'
   difficulty: 1

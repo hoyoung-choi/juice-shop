@@ -2,7 +2,7 @@ application:
   logo: JuiceShopCTF_Logo.png
   favicon: favicon_ctf.ico
   showVersionNumber: false
-  showGitHubLinks: false
+  showGitHubLinks: true
   welcomeBanner:
     showOnFirstStart: false
 challenges:

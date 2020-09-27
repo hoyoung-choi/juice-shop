@@ -2,7 +2,7 @@ application:
   logo: JuiceShopCTF_Logo.png
   favicon: favicon_ctf.ico
   showVersionNumber: false
-  showGitHubLinks: false
+  showGitHubLinks: true
   welcomeBanner:
     showOnFirstStart: false
 challenges:
@@ -127,12 +127,6 @@ ctf:
     continueCodeChallenge:
       name: Malaysia
       code: MY
-    oauthUserPasswordChallenge:
-      name: South Sudan
-      code: SS
-    loginCisoChallenge:
-      name: Angola
-      code: AO
     loginSupportChallenge:
       name: Croatia
       code: HR
@@ -166,9 +160,6 @@ ctf:
     retrieveBlueprintChallenge:
       name: Venezuela
       code: VE
-    typosquattingNpmChallenge:
-      name: Nicaragua
-      code: NI
     typosquattingAngularChallenge:
       name: Senegal
       code: SN
@@ -196,9 +187,6 @@ ctf:
     rceOccupyChallenge:
       name: India
       code: IN
-    tokenSaleChallenge:
-      name: United Kingdom
-      code: GB
     securityPolicyChallenge:
       name: Spain
       code: ES
@@ -214,9 +202,6 @@ ctf:
     basketManipulateChallenge:
       name: Bhutan
       code: BT
-    emailLeakChallenge:
-      name: Bahamas
-      code: BH
     registerAdminChallenge:
       name: Jamaica
       code: JA
@@ -241,9 +226,6 @@ ctf:
     accessLogDisclosureChallenge:
       name: Singapore
       code: SG
-    dlpPasswordSprayingChallenge:
-      name: Chad
-      code: TD
     dlpPastebinDataLeakChallenge:
       name: Turkmenistan
       code: TK

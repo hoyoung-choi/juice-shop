@@ -93,15 +93,6 @@ describe('verify', () => {
       expect(challenges.adminSectionChallenge.solved).to.equal(true)
     })
 
-    it('"tokenSaleChallenge" is solved when the 56px.png transpixel is requested', () => {
-      challenges.tokenSaleChallenge = { solved: false, save: this.save }
-      this.req.url = 'http://juice-sh.op/public/images/padding/56px.png'
-
-      verify.accessControlChallenges()(this.req, this.res, this.next)
-
-      expect(challenges.tokenSaleChallenge.solved).to.equal(true)
-    })
-
     it('"extraLanguageChallenge" is solved when the Klingon translation file is requested', () => {
       challenges.extraLanguageChallenge = { solved: false, save: this.save }
       this.req.url = 'http://juice-sh.op/public/i18n/tlh_AA.json'

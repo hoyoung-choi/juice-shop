@@ -4,7 +4,7 @@ application:
   logo: 'https://www.alldaydevops.com/hubfs/2019-ADDO/2019%20Logo%20Files/ADDO_Logo_2019_White.svg'
   favicon: 'https://www.sonatype.com/hubfs/ADDO-2018/ADDO_fav4.png'
   theme: pink-bluegrey
-  showGitHubLinks: false
+  showGitHubLinks: true
   altcoinName: ADDcOin
   privacyContactEmail: 'donotreply@ad.do'
   customMetricsPrefix: addo

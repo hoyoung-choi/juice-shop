@@ -348,16 +348,6 @@ ctf:
         type: string
       code:
         type: string
-    oauthUserPasswordChallenge:
-      name:
-        type: string
-      code:
-        type: string
-    loginCisoChallenge:
-      name:
-        type: string
-      code:
-        type: string
     loginSupportChallenge:
       name:
         type: string
@@ -418,11 +408,6 @@ ctf:
         type: string
       code:
         type: string
-    typosquattingNpmChallenge:
-      name:
-        type: string
-      code:
-        type: string
     typosquattingAngularChallenge:
       name:
         type: string
@@ -468,11 +453,6 @@ ctf:
         type: string
       code:
         type: string
-    tokenSaleChallenge:
-      name:
-        type: string
-      code:
-        type: string
     securityPolicyChallenge:
       name:
         type: string
@@ -494,11 +474,6 @@ ctf:
       code:
         type: string
     basketManipulateChallenge:
-      name:
-        type: string
-      code:
-        type: string
-    emailLeakChallenge:
       name:
         type: string
       code:
@@ -539,11 +514,6 @@ ctf:
       code:
         type: string
     accessLogDisclosureChallenge:
-      name:
-        type: string
-      code:
-        type: string
-    dlpPasswordSprayingChallenge:
       name:
         type: string
       code:

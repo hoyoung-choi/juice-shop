@@ -36,9 +36,6 @@ module.exports = function login() {
                 if (rememberedEmail && req.body.oauth) {
                     models.User.findOne({where: {email: rememberedEmail}}).then(rememberedUser => {
                         user = utils.queryResultToJson(rememberedUser)
-                        utils.solveIf(challenges.loginCisoChallenge, () => {
-                            return user.data.id === users.ciso.id
-                        })
                         afterLogin(user, res, next)
                     })
                 } else if (user.data && user.data.id && user.data.totpSecret !== '') {
@@ -77,12 +74,6 @@ module.exports = function login() {
         })
         utils.solveIf(challenges.loginAmyChallenge, () => {
             return req.body.email === 'amy@' + config.get('application.domain') && req.body.password === 'K1f.....................'
-        })
-        utils.solveIf(challenges.dlpPasswordSprayingChallenge, () => {
-            return req.body.email === 'J12934@' + config.get('application.domain') && req.body.password === '0Y8rMnww$*9VFYE§59-!Fg1L6t&6lB'
-        })
-        utils.solveIf(challenges.oauthUserPasswordChallenge, () => {
-            return req.body.email === 'bjoern.kimminich@gmail.com' && req.body.password === 'bW9jLmxpYW1nQGhjaW5pbW1pay5ucmVvamI='
         })
     }
 

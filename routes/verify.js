@@ -49,7 +49,6 @@ exports.passwordRepeatChallenge = () => (req, res, next) => {
 exports.accessControlChallenges = () => ({ url }, res, next) => {
   utils.solveIf(challenges.scoreBoardChallenge, () => { return utils.endsWith(url, '/1px.png') })
   utils.solveIf(challenges.adminSectionChallenge, () => { return utils.endsWith(url, '/19px.png') })
-  utils.solveIf(challenges.tokenSaleChallenge, () => { return utils.endsWith(url, '/56px.png') })
   utils.solveIf(challenges.privacyPolicyChallenge, () => { return utils.endsWith(url, '/81px.png') })
   utils.solveIf(challenges.extraLanguageChallenge, () => { return utils.endsWith(url, '/tlh_AA.json') })
   utils.solveIf(challenges.retrieveBlueprintChallenge, () => { return utils.endsWith(url, cache.retrieveBlueprintChallengeFile) })
@@ -124,9 +123,6 @@ exports.databaseRelatedChallenges = () => (req, res, next) => {
   }
   if (utils.notSolved(challenges.weirdCryptoChallenge)) {
     weirdCryptoChallenge()
-  }
-  if (utils.notSolved(challenges.typosquattingNpmChallenge)) {
-    typosquattingNpmChallenge()
   }
   if (utils.notSolved(challenges.typosquattingAngularChallenge)) {
     typosquattingAngularChallenge()
@@ -247,20 +243,6 @@ function weirdCryptos () {
   ]
 }
 
-function typosquattingNpmChallenge () {
-  models.Feedback.findAndCountAll({ where: { comment: { [Op.like]: '%epilogue-js%' } } }
-  ).then(({ count }) => {
-    if (count > 0) {
-      utils.solve(challenges.typosquattingNpmChallenge)
-    }
-  })
-  models.Complaint.findAndCountAll({ where: { message: { [Op.like]: '%epilogue-js%' } } }
-  ).then(({ count }) => {
-    if (count > 0) {
-      utils.solve(challenges.typosquattingNpmChallenge)
-    }
-  })
-}
 
 function typosquattingAngularChallenge () {
   models.Feedback.findAndCountAll({ where: { comment: { [Op.like]: '%ng2-bar-rating%' } } }
